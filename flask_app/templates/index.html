@@ -2,20 +2,19 @@
 
 {% block content %}
 <div>
-    <p>Welcome</p>
+    <main role="main" class="container">
+        <h3>File Upload</h3>
 
-    <h1>File Upload</h1>
+        {% from 'bootstrap4/form.html' import render_form %}
 
-    {% from 'bootstrap4/form.html' import render_field %}
-    <form method="POST" action="" enctype="multipart/form-data">
-      <p><input type="file" name="file"></p>
-      <p><input type="submit" value="Submit"></p>
-      {{ form.csrf_token() }}
-      {{ render_field(form.submit) }}
-    </form>
+        {{ render_form(form, method="POST", action='', enctype='multipart/form-data') }}
+
+    </main>
 
     {% if day_fig %}
-    <img src="data:image/png;base64,{{day_fig}}"/>
+    <main role="main" class="container">
+        <img src="data:image/png;base64,{{day_fig}}"/>
+    </main>
     {% endif %}
 
     {%if tables %}
