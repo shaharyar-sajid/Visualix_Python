@@ -11,10 +11,13 @@
 
     </main>
 
-    {% if day_fig %}
-    <main role="main" class="container">
-        <img src="data:image/png;base64,{{day_fig}}"/>
-    </main>
+    {% if graphs %}
+        <main role="main" class="container">
+            {% for graph in graphs %}
+                <img src="data:image/png;base64,{{graph}}"/>
+                <hr>
+            {% endfor %}
+        </main>
     {% endif %}
 
     {%if tables %}

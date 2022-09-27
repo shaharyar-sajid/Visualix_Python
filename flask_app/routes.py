@@ -28,13 +28,19 @@ def index():
                     abort(400)
                 uploaded_file.stream.seek(0) # seek to the beginning of file
                 #df = pd.read_csv(uploaded_file.stream)
+
                 df = util.load_stream_file(uploaded_file.stream)
                 util.split_title(df)
                 util.split_date(df)
                 util.make_day_categorical(df)
-                day_fig = flask_visual.visual_day_activity(df)
+
+                graphs = []
+                graphs.append(flask_visual.visual_day_activity_flask(df))
+                graphs.append(flask_visual.visual_viewing_timeline_flask(df))
+                graphs.append(flask_visual.visual_top_ten_view_flask(df))
+                graphs.append(flask_visual.visual_top_ten_timeline_flask(df))
             #return render_template('index.html', title='Home', tables=[df.to_html(classes='data')], titles=df.columns.values, day_fig=day_fig)
-            return render_template('index.html', title='Home', day_fig=day_fig, form=form)
+            return render_template('index.html', title='Home', graphs=graphs, form=form)
         
         # df = None
         # uploaded_file = request.files['file']
