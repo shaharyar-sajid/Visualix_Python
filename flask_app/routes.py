@@ -15,6 +15,7 @@ from flask_app.forms import CsvForm
 @app.route('/index')
 def upload_files():
     if request.method == 'POST':
+        form = CsvForm()
         df = None
         uploaded_file = request.files['file']
         filename = secure_filename(uploaded_file.filename)
