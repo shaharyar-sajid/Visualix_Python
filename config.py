@@ -8,5 +8,5 @@ class Config(object):
     MAX_CONTENT_LENGTH = 1024 * 1024
     UPLOAD_EXTENSIONS = ['.csv']
     UPLOAD_PATH = 'uploads'
-    SECRET_KEY = os.urandom(32)
+    SECRET_KEY = os.environ.get('SECRET_KEY') or os.urandom(32)
     BOOTSTRAP_BOOTSWATCH_THEME = 'simplex'
