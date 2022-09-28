@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<main role="main" class="container">
+    <article class="blog-post">
+        <h2 class="blog-post-title">Instructions</h2>
+
+        <h3>Step 1</h3>
+        <p>Open your Netflix account on a web browser like Chrome or Edge. On the top right corner click on the drop down menu button and click on the Account option. This will navigate you to the Account Page</p>
+        <figure>
+            <img src="{{url_for('static', filename='help1.png')}}" class="img-fluid rounded mx-auto d-block"/>
+            <figcaption class="figure-caption text-center">Netflix dropdown menu on main page.</figcaption>
+        </figure>
+        <hr>
+
+        <h3>Step 2</h3>
+        <p>The Account page should be visible on your screen. Now look for the View activity option and click on the View option</p>
+        <figure>
+            <img src="{{url_for('static', filename='help2.png')}}" class="img-fluid rounded mx-auto d-block"/>
+            <figcaption class="figure-caption text-center">Viewing activity on Accounts page.</figcaption>
+        </figure>
+        <hr>
+
+        <h3>Step 3</h3>
+        <p>The viewing activity page displays all your watched shows. Scroll down and look for the Download All option. This will download your viewing history in a CSV file. You can now upload it on the home page to visualize your viewing habits.</p>
+        <figure>
+            <img src="{{url_for('static', filename='help3.png')}}" class="img-fluid rounded mx-auto d-block"/>
+            <figcaption class="figure-caption text-center">Netflix dropdown menu on main page.</figcaption>
+        </figure>
+        <hr>
+      </article>
+</main>
+
+{% endblock %}
