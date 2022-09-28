@@ -1,7 +1,7 @@
 from typing import Tuple, Union
 import pandas as pd
 #import imdb
-from tqdm import tqdm
+#from tqdm import tqdm
 
 def load_csv_file(path:str) -> Union[pd.DataFrame,None]:
     '''Loads the csv file using pandas.read_csv and sets the parse_date
