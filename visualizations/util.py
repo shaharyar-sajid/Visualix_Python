@@ -1,6 +1,6 @@
 from typing import Tuple, Union
 import pandas as pd
-import imdb
+#import imdb
 from tqdm import tqdm
 
 def load_csv_file(path:str) -> Union[pd.DataFrame,None]:
