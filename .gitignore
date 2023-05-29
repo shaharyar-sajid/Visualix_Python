@@ -1,4 +1,5 @@
-flask_app/__pycache__/forms.cpython-37.pyc
-flask_app/__pycache__/routes.cpython-37.pyc
-visualizations/__pycache__/flask_visual.cpython-37.pyc
-__pycache__/config.cpython-37.pyc
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.csv
