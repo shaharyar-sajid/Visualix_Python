@@ -4,8 +4,8 @@
 
 ## Prerequisites
 - [x] Python 3.6 or later
-- [x] pip package manager
-- [x] git
+- [x] Pip package manager
+- [x] Git
 
 
 ## Setup
