@@ -33,7 +33,7 @@ pip install -r requirements.txt
 	```bash
 	pip install -r requirements.txt
 	```
-    use conda package management tool for install the `mkl-fft` library:
+    use conda package management tool for installing the `mkl-fft` library:
     ```
     conda install -c intel mkl_fft 
     ``` 
