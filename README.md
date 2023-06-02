@@ -33,7 +33,10 @@ pip install -r requirements.txt
 	```bash
 	pip install -r requirements.txt
 	```
-
+    use conda package management tool for install the `mkl-fft` library:
+    ```
+    conda install -c intel mkl_fft 
+    ``` 
 - execute the following commands
 	```bash
 	set FLASK_APP=main_app.py
