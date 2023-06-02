@@ -2,10 +2,11 @@
 
 
 
-## Install Requirements
-```bash
-pip install -r requirements.txt
-```
+## Prerequisites
+- [x] Python 3.6 or later
+- [x] pip package manager
+- [x] git
+
 
 ## Setup
 - open the terminal
