@@ -7,4 +7,5 @@ visual.code-workspace
 test.py
 .env
 temp-plot.html
-
+Pipfile
+.flaskenv
