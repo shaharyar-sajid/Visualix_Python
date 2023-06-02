@@ -9,17 +9,17 @@
 
 
 ## Setup
-- open the terminal
-- clone the repository
+- Open the terminal
+- Clone the repository
 	```bash
 	git clone https://github.com/Laughing-Kid/Visualix_Python.git
 	```
-- change the directory
+- Change the current working directory
 
 	```bash
 	cd Visualix_Python
 	```
-- execute the below commands
+- Execute the below commands
  	```bash
 	pip3 install pipenv
 	```
@@ -30,7 +30,7 @@
 	pipenv shell
 	```
 	
-- install the requirements 
+- Install the requirements 
 	```bash
 	pip install -r requirements.txt
 	```
@@ -38,7 +38,7 @@
     ```
     conda install -c intel mkl_fft 
     ``` 
-- execute the following commands
+- Execute the following commands
 	```bash
 	set FLASK_APP=main_app.py
 	```
