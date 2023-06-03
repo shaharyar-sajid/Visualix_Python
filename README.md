@@ -1,5 +1,6 @@
-# Visualix_Python
+# Visualix
 
+Visualix is a Flask app that visualizes your Netflix viewing activity. It shows all your watched tv shows and movies in different graphs and formats to provide various insights.
 
 
 ## Prerequisites
